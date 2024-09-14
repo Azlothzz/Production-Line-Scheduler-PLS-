@@ -8,7 +8,7 @@ This production line scheeduler is a tool designed to optimize the scheduling of
 USAGE:
 This project is divided into 5 functions:
 >addPERIOD where the user enters the production period. addPERIOD [start date] [end date]
->addORDER is for the user to add an ordeer and give somme details about the product. addORDER [Order Number] [Due Date] [Quantity] [Product Name]
+>addORDER is for the user to add an ordeer and give some details about the product. addORDER [Order Number] [Due Date] [Quantity] [Product Name]
 >addBATCH is to add a batch file in text which contains multiple lines of addORDER. addBATCH [Orders in a batch file]
 >runPLS is to generate and execute the schedule with a selected scheduling algorithm, then printREPORT is to print a report of tthat schedule with the analysis details. runPLS [Algorithm] | printREPORT > [Report file name]
 >exitPLS is to terminate the program. exitPLS
