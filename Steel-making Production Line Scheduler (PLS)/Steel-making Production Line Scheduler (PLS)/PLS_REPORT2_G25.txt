@@ -1,0 +1,105 @@
+Plant_X (300 per day)
+2024-06-01 to 2024-06-10
+Date          Product Name   Order Number   Quantity(Produced)   Due Date
+2024-06-01    pa             p0007                         300   2024-06-05
+2024-06-02    pa             p0005                         300   2024-06-03
+2024-06-03    pa             p0006                         300   2024-06-04
+2024-06-04    pa             p0006                         300   2024-06-04
+2024-06-05    pa             p0009                         300   2024-06-07
+2024-06-06    pa             p0010                         300   2024-06-08
+2024-06-07    pa             p0010                         300   2024-06-08
+2024-06-08    pa             p0011                         300   2024-06-09
+2024-06-09    pa             p0011                         300   2024-06-09
+2024-06-10    NA
+
+Plant_Y (400 per day)
+2024-06-01 to 2024-06-10
+Date          Product Name   Order Number   Quantity(Produced)   Due Date
+2024-06-01    pa             p0012                         300   2024-06-10
+2024-06-02    pa             p0005                         200   2024-06-03
+2024-06-03    pa             p0006                         400   2024-06-04
+2024-06-04    pa             p0009                         400   2024-06-07
+2024-06-05    pa             p0009                         400   2024-06-07
+2024-06-06    pa             p0010                         400   2024-06-08
+2024-06-07    pa             p0010                         400   2024-06-08
+2024-06-08    pa             p0011                         400   2024-06-09
+2024-06-09    pa             p0011                         400   2024-06-09
+2024-06-10    NA
+
+Plant_Z (500 per day)
+2024-06-01 to 2024-06-10
+Date          Product Name   Order Number   Quantity(Produced)   Due Date
+2024-06-01    pa             p0008                         400   2024-06-06
+2024-06-02    pa             p0006                         500   2024-06-04
+2024-06-03    pa             p0006                         500   2024-06-04
+2024-06-04    pa             p0009                         500   2024-06-07
+2024-06-05    pa             p0009                         400   2024-06-07
+2024-06-06    pa             p0010                         500   2024-06-08
+2024-06-07    pa             p0010                         100   2024-06-08
+2024-06-08    pa             p0011                         500   2024-06-09
+2024-06-09    pa             p0011                         100   2024-06-09
+2024-06-10    NA
+
+
+***PLS Schedule Analysis Report***
+
+Algorithm used: SJF
+
+There are 8 Orders ACCEPTED.  Details are as follows:
+
+ORDER NUMBER   START         END             DAYS     QUANTITY     PLANT
+===========================================================================
+p0007          2024-05-31    2024-06-01         1          300     PLANT_X
+p0012          2024-05-31    2024-06-01         1          300     PLANT_Y
+p0008          2024-05-31    2024-06-01         1          400     PLANT_Z
+p0005          2024-06-01    2024-06-02         1          300     PLANT_X
+p0005          2024-06-01    2024-06-02         1          200     PLANT_Y
+p0006          2024-06-01    2024-06-03         2         1000     PLANT_Z
+p0006          2024-06-02    2024-06-04         2          600     PLANT_X
+p0006          2024-06-02    2024-06-03         1          400     PLANT_Y
+p0009          2024-06-03    2024-06-05         2          900     PLANT_Z
+p0009          2024-06-04    2024-06-05         1          300     PLANT_X
+p0009          2024-06-03    2024-06-05         2          800     PLANT_Y
+p0010          2024-06-05    2024-06-07         2          600     PLANT_Z
+p0010          2024-06-05    2024-06-07         2          600     PLANT_X
+p0010          2024-06-05    2024-06-07         2          800     PLANT_Y
+p0011          2024-06-07    2024-06-09         2          600     PLANT_Z
+p0011          2024-06-07    2024-06-09         2          600     PLANT_X
+
+- End -
+
+===========================================================================
+
+
+There are 5 Orders REJECTED.  Details are as follows: 
+
+ORDER NUMBER   PRODUCT NAME         Due Date             QUANTITY
+===========================================================================
+p0001          pa                   2024-06-01           1200
+p0002          pa                   2024-05-30           2000
+p0003          pa                   2024-06-01           2000
+p0004          pa                   2024-06-02           2000
+p0013          pa                   2024-06-11           2000
+
+- End -
+
+===========================================================================
+
+***PERFORMANCE 
+
+Plant_X:
+        Number of days in use:                     9 days
+        Number of products produced:            2700 (in total)
+        Utilization of the plant:             90.0 %
+
+Plant_Y:
+        Number of days in use:                     9 days
+        Number of products produced:            3300 (in total)
+        Utilization of the plant:             82.5 %
+
+Plant_Z:
+        Number of days in use:                     9 days
+        Number of products produced:            3500 (in total)
+        Utilization of the plant:             70.0 %
+
+Overall of utilization:                       79.2 %
